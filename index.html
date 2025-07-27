@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Road Hazard Detection</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-black font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md py-4 px-6">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="logo.png" alt="Logo" class="w-10 h-10 mr-3 mt-2">
+        <span class="text-lg font-bold text-indigo-600">Road Hazard AI</span>
+      </div>
+      <!-- Navigation -->
+      <nav class="hidden md:block">
+        <a href="#how-it-works" class="text-black hover:text-indigo-600 font-medium mr-6">How It Works</a>
+        <a href="#demo" class="text-black hover:text-indigo-600 font-medium">Demo</a>
+      </nav>
+    </div>
+  </header>
+
+ <!-- Hero Section -->
+<section class="relative bg-cover bg-center text-white px-6 py-24 md:py-32" style="background-image: url('roadhazardbg.jpg');">
+  <!-- Darker overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+  
+  <div class="relative z-10 max-w-4xl mx-auto text-center">
+    <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight text-indigo-400">
+      A Picture Can Save Lives.
+    </h1>
+    <p class="text-lg md:text-xl text-white">
+      Upload. Detect. Prevent. Our AI identifies road hazards before they become accidents.
+    </p>
+  </div>
+</section>
+
+
+
+  <!-- How it Works -->
+  <section id="how-it-works" class="py-16 px-6 bg-indigo-50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-10 text-indigo-600">How It Works</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="bg-white shadow rounded-xl p-6">
+          <h3 class="font-bold text-lg mb-2 text-indigo-600">1. Upload an Image</h3>
+          <p>Capture or upload a road surface image using your device.</p>
+        </div>
+        <div class="bg-white shadow rounded-xl p-6">
+          <h3 class="font-bold text-lg mb-2 text-indigo-600">2. AI Detection</h3>
+          <p>Our model detects potholes, cracks, and other hazards in seconds.</p>
+        </div>
+        <div class="bg-white shadow rounded-xl p-6">
+          <h3 class="font-bold text-lg mb-2 text-indigo-600">3. View Results</h3>
+          <p>Check the output image with detected regions highlighted.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Demo Section -->
+<section id="demo" class="py-16 px-6 bg-white">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-indigo-600">Sample Detection Results</h2>
+    <p class="mb-10 text-gray-800">Here are some examples of detected road hazard images:</p>
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="rounded-xl shadow-md overflow-hidden">
+        <img src="image (1).webp" alt="Detection Sample 1" class="w-full h-64 object-cover">
+      </div>
+      <div class="rounded-xl shadow-md overflow-hidden">
+        <img src="image (2).webp" alt="Detection Sample 2" class="w-full h-64 object-cover">
+      </div>
+      <div class="rounded-xl shadow-md overflow-hidden">
+        <img src="image.webp" alt="Detection Sample 3" class="w-full h-64 object-cover">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Demo Section -->
+<section id="demo" class="py-16 px-6 bg-indigo-50">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-indigo-600">Try the Live Demo</h2>
+    <p class="mb-6 text-gray-800">
+      Upload a road image and try detecting various types of damage: 
+      <strong>Longitudinal, Lateral, Alligator Cracks, and Potholes</strong>.
+    </p>
+    <a href="https://huggingface.co/spaces/izulkurniawan/RoadHazardDetection"
+       target="_blank"
+       class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-xl shadow-md transition duration-300">
+      Launch Demo on Hugging Face
+    </a>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-zinc-900 text-white py-6 text-center">
+    <p class="text-sm">&copy; 2025 Road Hazard AI — Powered by YOLOv12</p>
+    <p class="mt-2 text-xs">View on <a href="https://github.com/your-repo" target="_blank" class="underline">GitHub</a></p>
+  </footer>
+
+</body>
+</html>
